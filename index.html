@@ -15,7 +15,7 @@
 
     <body>
 
-        
+        <div class="header">
         <nav>
             <div class="menubar">
                 <a href="index.html"><button class="menu">Home</button></a>
@@ -23,43 +23,50 @@
                 <a href="contact.html"><button class="menu">Contact</button></a>
             </div>
         </nav>
-        <img src="images/Logo_transparent.png" width="80px" style="margin-left: 20px; margin-top: 20px; position: fixed;">
-        <br>
+        <img src="images/Logo_transparent.png" width="80px" style="margin-left: 20px; margin-top: 30px;">
+        <br></div>
 
         
         <br><br><br><br><br><br>
 
-        <div class="welcome">
-            <canvas id="mycanvas"></canvas> 
-        </div> 
+        <div class="title">
+            <div class="titletxt">
+                <h1>E.S PORTFOLIO</h1>
+                <p>Welcome to my portfolio, here you can explore a little about me, and you can view my websites and other projects.</p>
+            </div>
+        </div>
+
+        <div class="about">
+            <h1>About me</h1>
+            <p id="abouttxt"></p>
+        </div>
 
 
         <div class="projects">
-            <h1>Projects</h1>
-            <button class="projectbtn">Explore All Projects</button>
+            <h1>Projects Showcase</h1>
+            <a href="projects.html"><button class="projectbtn">Explore All Projects</button></a>
             <br>
             <br>
             <br><br>
+
             <div class="latestprojects">
-
                 <div class="latestproject">
-                    <img src="images/projects_bg.png">
-                    <h2>Coming soon</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, nesciunt!</p>
+                    <img src="https://images.unsplash.com/photo-1516382799247-87df95d790b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+                    <h2>QuturRuh Search</h2>
+                    <p>>A search engine that only shows authentic Islamic websites.</p>
                 </div>
 
                 <div class="latestproject">
-                    <img src="images/projects_bg.png">
-                    <h2>Coming soon</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, nesciunt!</p>
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1265&q=80">
+                    <h2>EduLeague™️</h2>
+                    <p>Project under development!</p>
                 </div>
 
                 <div class="latestproject">
-                    <img src="images/projects_bg.png">
-                    <h2>Coming soon</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, nesciunt!</p>
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80">
+                    <h2>E.S Portfolio</h2>
+                    <p>My Personal Portfolio that you are viewing right now.</p>
                 </div>
-
             </div>
         </div>
 
@@ -84,20 +91,23 @@
                 <tr>
                     <th>Pages</th>
                     <th>Profiles</th>
-                    <th>Credits</th>
+                    <th>My Websites</th>
+                    <th>Credits For This Website</th>
                 </tr>
                 <tr>
                     <td><a>Home</a></td>
                     <td><a href="https://codepen.io/eisa-s">Codepen</a></td>
-                    <td><a href="https://gallery.yopriceville.com/Free-Clipart-Pictures/Winter-PNG/Snowy_Mountain_Transparent_PNG_Clipart#google_vignette">Mountain Image from Yopriceville</a></td>
+                    <td><a>E.S EduLeague™️</a></td>
+                    <td><a href="https://unsplash.com/@fakurian">Header Background</a></td>
                 </tr>
                 <tr>
                     <td><a href="projects.html">Projects</a></td>
                     <td><a href="https://www.khanacademy.org/profile/eisas.ka">Khan Academy</a></td>
-                    <td>Rest by me</td>
+                    <td><a href="https://sites.google.com/view/quturruhsearch/home">QuturRuh Search</a></td>
+                    <td><a>Rest by me (Eisa S.)</a></td>
                 </tr>
                 <tr>
-                    <td><a href="projects.html">Contact</a></td>
+                    <td><a href="contact.html">Contact</a></td>
                     <td></td>
                 </tr>
                 <tr>
@@ -106,7 +116,7 @@
                 
             </table>
             
-            <img src="images/Logo_transparent.png" style=" margin-right: 1px; float: right;" width="300px">
+            <img src="images/Logo_transparent.png" style="margin-top: 60px; margin-right: 20px; float: right;" width="150em">
 
         </footer>
 
@@ -117,10 +127,21 @@
         window.onload = function () {
              window.scrollTo(0, 0);
         }
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
-    <script src="scripts.js"></script>
+        var i = 0;
+        var txt = 'I am Eisa S., a junior (mainly web) developer based in the United Arab Emirates. \nI do HTML, CSS, and JS. Furthermore, I also work with 3D Projects in Blender 3.0 sometimes, and I know a little bit of Python as well.';
+        var speed = 50;
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("abouttxt").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+        }
+         
+        typeWriter();
+    </script>
  
  
 </html>
