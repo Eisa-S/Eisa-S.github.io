@@ -158,10 +158,12 @@ canvas {
     color: white;
     background-color: rgb(0, 0, 0, 0);
     border: solid #ffffff;
-    border-width: 3px;
-    font-size: 20px;
-    border-radius: 3px;
-    padding: 5px;
+    border-width: 2px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100px;
+    height: 40px;
     transition: 0.5s;
 }
 .homebtn:hover {
@@ -221,6 +223,7 @@ table a {
     text-align: center;
     margin: 50px;
     border-radius: 10px;
+    
 }
 .projects h1 {
     font-size: 2.5em;
@@ -236,6 +239,9 @@ table a {
     padding: 10px;
     font-family: 'Fredoka One', cursive;
     transition: 0.5s;
+    border: none;
+    border-width: 3px;
+    border-radius: 5px;
     
 }
 .projectbtn:hover {
