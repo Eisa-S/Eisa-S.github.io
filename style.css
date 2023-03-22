@@ -165,6 +165,7 @@ canvas {
     width: 100px;
     height: 40px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .homebtn:hover {
     background-color: white;
@@ -187,6 +188,7 @@ canvas {
     border: none;
     transition: 0.5s;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .menu:hover {
@@ -242,7 +244,7 @@ table a {
     border: none;
     border-width: 3px;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
 .projectbtn:hover {
     transform: scale(1.2);
