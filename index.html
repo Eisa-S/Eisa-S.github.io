@@ -23,7 +23,7 @@
         render() {
             return (
                 <h1>
-                    Hello
+                    This Webpage is Currently being updated
                 </h1>
             )
 
@@ -31,7 +31,21 @@
 
     }
 
-    ReactDOM.render(<Welcome />, document.querySelector("#app"));
+
+    class App extends React.Component {
+
+        render() {
+            return (
+                <div>
+                    <Welcome />
+                    <p>The webpage is currently being rebuilt with React JS.</p>
+                </div>
+            )
+        }
+
+    }
+
+    ReactDOM.render(<App />, document.querySelector("#app"));
 </script>
 
 </body>
