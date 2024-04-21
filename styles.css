@@ -115,3 +115,11 @@ body {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.credits {
+    position: absolute;
+    display: block;
+    left:20px;
+    bottom: 20px;
+    font-family: "Comfortaa", sans-serif;
+}
