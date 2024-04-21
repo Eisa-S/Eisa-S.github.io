@@ -1,0 +1,117 @@
+html,body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    background-image: url('Assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-attachment: fixed;
+}
+
+/*
+    font-family: "Lora", serif;
+    font-family: "Lilita One", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Lalezar", system-ui;
+    font-family: "Comfortaa", sans-serif;
+*/
+
+.main {
+    background: rgba(226, 226, 226, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    display: block;
+    position: absolute;
+    top:150px;
+    right:10%;
+    left: 10%;
+    
+    padding: 40px;
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+    margin: -15px;
+}
+
+.logo {
+    width: 2em;
+    height: 2em;
+    display: inline-flex;
+}
+
+.subheading {
+    display: inline-flex;
+    margin-left: 10px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+}
+
+.contact {
+    padding:10px;
+    border-radius: 5px;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    background-color: rgba(240, 248, 255, 0);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.maintxt {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+.subtxt {
+    font-family: "Comfortaa", sans-serif;
+    font-size:1.2em;
+}
+
+.email {
+    text-decoration: underline;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.email:hover {
+    cursor: pointer;
+}
+
+
+.sideimg {
+
+    display: inline-block;
+    border-radius: 1000px;
+    position: absolute;
+    right:40px;
+    bottom:85px;
+    top:100px;
+    
+
+    background: rgba(226, 226, 226, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
